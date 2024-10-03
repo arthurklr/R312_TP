@@ -1,0 +1,9 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.page1{
+    background-color: #09c;
+    min-height: 100vh;
+}
