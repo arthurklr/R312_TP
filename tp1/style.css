@@ -1,9 +1,80 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-.page1{
+header {
+    margin-left: 1%;
+    min-height: 30px;
+    display: flex;
+    align-items: end;
+}
+
+ul {
+    margin: 0;
+    padding: 4px 16px;
+}
+
+.hamburger {
+    transition: 0.2s;
+}
+
+.page1 {
     background-color: #09c;
     min-height: 100vh;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.enfant {
+    background-color: #222;
+    color: #f8f8ff;
+    width: fit-content;
+    padding: 16px 32px;
+}
+
+.menu {
+    transform: translate(-500px);
+    transition: 0.2s;
+    background-color: transparent;
+    min-height: 100svh;
+    min-width: 100%;
+    position: absolute;
+    background-color: red;
+}
+
+.active {
+    transform: translate(0px);
+    transition: 0.2s;
+}
+
+.tourne {
+    transform: rotate(90deg);
+    transition: 0.2s;
+}
+
+@media screen and (min-width: 680px) {
+    .menu {
+        min-width: 30%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .menu {
+        min-width: 20%;
+        transform: translate(0px);
+        position: initial;
+    }
+    .page1{
+        display: flex;
+    }
+
+    .hamburger{
+        display: none;
+    }
 }
