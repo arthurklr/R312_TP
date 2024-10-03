@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TP 1</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="page1"></div>
+
+    <header>
+        <div class="hamburger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#222"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </div>
+    </header>
+    <div class="page1">
+        <div class="menu">
+            <ul>
+                <li>Menu</li>
+                <li>Menu</li>
+                <li>Menu</li>
+                <li>Menu</li>
+            </ul>
+        </div>
+        <div class="grid">
+            <div class="enfant">1</div>
+            <div class="enfant">2</div>
+            <div class="enfant">3</div>
+            <div class="enfant">4</div>
+            <div class="enfant">5</div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener("click", ouvert)
+        function ouvert() {
+            document.querySelector('.menu').classList.toggle('active')
+            document.querySelector('.hamburger').classList.toggle('tourne')
+        }
+    </script>
 </body>
+
 </html>
