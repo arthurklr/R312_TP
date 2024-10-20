@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+
+.page1 {
+    min-height: 100vh;
+    background: linear-gradient(90deg, blue 0%, blue 50%, red 50%, red 100%);
+}
+
+.page2 {
+    min-height: 100vh;
+    background:
+        url(chatte.png),
+        radial-gradient(red 0%, red 50%, transparent 50%, transparent 100%),
+        linear-gradient(0deg, darkblue 0%, blue 100%);
+    background-size: 600px, 10vw 10vw, 100vh 100vh;
+    background-repeat: no-repeat, repeat, repeat;
+    background-position: bottom left;
+}
